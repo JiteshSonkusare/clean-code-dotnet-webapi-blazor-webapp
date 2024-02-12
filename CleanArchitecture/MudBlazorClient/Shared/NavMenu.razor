@@ -1,0 +1,23 @@
+﻿<style>
+	.mb-n2 {
+		color: #adadb1;
+	}
+</style>
+<MudNavMenu Margin="Margin.Normal" Style="margin-top:10px;">
+	<MudNavLink Href="" Match="NavLinkMatch.All" Icon="@Icons.Material.Filled.Home">Home</MudNavLink>
+	<MudNavGroup Title="Default" Icon="@Icons.Filled.LibraryBooks" Expanded="false">
+		<MudNavLink Href="counter" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.Add">Counter</MudNavLink>
+		<MudNavLink Href="fetchdata" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.List">Fetch data</MudNavLink>
+	</MudNavGroup>
+	<AuthorizeView>
+		<MudNavLink Href="user" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.Group">User</MudNavLink>
+		<MudNavLink Href="server" Icon="@Icons.Material.Filled.Addchart">Server</MudNavLink>
+	</AuthorizeView>
+	<MudNavLink Href="contacts" Icon="@Icons.Material.Filled.AddLink">Contacts</MudNavLink>
+	<MudNavLink Href="privacy" Icon="@Icons.Material.Filled.ArtTrack">Privacy</MudNavLink>
+	<MudNavLink Href="about" Icon="@Icons.Material.Filled.AssignmentInd">About</MudNavLink>
+	<MudNavGroup Title="Settings" Icon="@Icons.Filled.LibraryBooks" Expanded="false">
+		<MudNavLink Href="role" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.Add">Role</MudNavLink>
+		<MudNavLink Href="claim" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.List">Claim</MudNavLink>
+	</MudNavGroup>
+</MudNavMenu>
